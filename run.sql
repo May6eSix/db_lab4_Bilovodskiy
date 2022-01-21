@@ -1,5 +1,5 @@
 -- FUNCTION
---Возвращает сколько ноутов на этой операционной системе
+--Возвращает сколько ноутбуков на этой операционной системе
 CREATE OR REPLACE FUNCTION os_on_laptops(smth text) RETURNS int AS
 $$
   DECLARE
