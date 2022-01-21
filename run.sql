@@ -6,8 +6,8 @@ $$
     result integer;
   BEGIN
     SELECT COUNT(*) INTO result
-    FROM laptops
-    INNER JOIN os ON laptops.os_id = os.os_id
+    FROM laptop
+    INNER JOIN os ON laptop.os_id = os.os_id
     WHERE os.os_name = smth;
     
    RETURN result;
@@ -15,6 +15,7 @@ $$
 $$ LANGUAGE 'plpgsql';
 
 SELECT * FROM os_on_laptops('without os')
+
 
 -- PROCEDURE
 -- ищет название ноутов с этой видеокартой
