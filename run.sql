@@ -3,7 +3,7 @@
 CREATE OR REPLACE FUNCTION os_on_laptops(smth text) RETURNS int AS
 $$
   DECLARE
-    resultat integer;
+    result integer;
   BEGIN
     SELECT COUNT(*) INTO result
     FROM laptops
